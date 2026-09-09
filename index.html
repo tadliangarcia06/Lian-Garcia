@@ -109,8 +109,9 @@
     .project-head h2{font-size:clamp(40px,5vw,64px);margin:12px 0 12px}
     .project-head p{color:#c2cdc7;font-size:18px;max-width:820px}
     .project-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-    .project{background:linear-gradient(180deg,#0d2a20,#0a2119);border:1px solid rgba(118,242,142,.16);border-radius:8px;overflow:hidden}
+    .project{background:linear-gradient(180deg,#0d2a20,#0a2119);border:1px solid rgba(118,242,142,.16);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;height:100%}
     .project-visual{height:240px;position:relative;overflow:hidden;background:linear-gradient(135deg,#365044,#17251f)}
+    .project-visual img{width:100%;height:100%;object-fit:cover;display:block}
     .project-visual:before{content:"";position:absolute;inset:0;background:
       linear-gradient(115deg,transparent 0 28%,rgba(255,255,255,.14) 28.4% 29%,transparent 29.4% 70%,rgba(255,255,255,.1) 70.4% 71%,transparent 71.4%),
       linear-gradient(0deg,rgba(5,12,9,.15),rgba(5,12,9,.15));}
@@ -118,11 +119,11 @@
     .project-visual.showroom{background:linear-gradient(145deg,#8f8c80 0%,#ded7c5 42%,#5b605d 43%,#171e1b 100%)}
     .project-visual.tower{background:linear-gradient(160deg,#87a9bc 0%,#c8d9de 45%,#536b73 46%,#18272a 100%)}
     .project-visual .sketch{position:absolute;left:8%;right:8%;bottom:10%;height:72%;border:2px solid rgba(255,255,255,.28);clip-path:polygon(0 28%,8% 28%,8% 12%,18% 12%,18% 20%,33% 20%,33% 5%,47% 5%,47% 22%,60% 22%,60% 15%,73% 15%,73% 30%,88% 30%,88% 0,100% 0,100% 100%,0 100%)}
-    .project-body{padding:18px 20px 20px}
+    .project-body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1;align-items:flex-start}
     .project-type{color:var(--green);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.16em;margin-bottom:8px}
     .project h3{font-size:24px;margin-bottom:9px}
     .project p{color:#c2cdc7;font-size:14px;min-height:70px}
-    .work-link{display:inline-flex;gap:12px;align-items:center;margin-top:16px;border:1px solid var(--green);color:var(--green);padding:9px 18px;border-radius:4px;font-weight:700;font-size:13px}
+    .work-link{display:inline-flex;gap:12px;align-items:center;margin-top:auto;padding-top:9px;padding-bottom:9px;padding-left:18px;padding-right:18px;border:1px solid var(--green);color:var(--green);border-radius:4px;font-weight:700;font-size:13px;align-self:flex-start}
     .project-footer{position:relative;z-index:2;margin-top:38px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 0;display:flex;align-items:center;justify-content:space-between;gap:28px;color:#eef3ef}
     .project-footer em{font-size:18px;color:#e8eee9}
     .project-footer a{color:var(--green);font-weight:700}
@@ -241,27 +242,27 @@
 
     <div class="project-grid">
       <article class="project">
-        <div class="project-visual restaurant"><div class="sketch"></div></div>
+        <div class="project-visual restaurant"><img src="project-1-featured.png" alt="Project 1 featured perspective"></div>
         <div class="project-body">
-          <div class="project-type">Restaurant Fit-Out</div><h3>Greenlight Burger</h3>
-          <p>Quantity takeoff, BOQ, cost estimation, procurement support and project coordination for a restaurant fit-out project.</p>
-          <a class="work-link" href="greenlight-burger.html">View My Work →</a>
+          <div class="project-type">Restaurant Fit-Out</div><h3>Project 1</h3>
+          <p>A restaurant fit-out involving Architectural and MEFPS works. I was responsible for site management, quantity and material takeoffs, and cost estimation, supporting the project from planning through execution.</p>
+          <a class="work-link" href="project-1.html">View My Work →</a>
         </div>
       </article>
       <article class="project">
-        <div class="project-visual showroom"><div class="sketch"></div></div>
+        <div class="project-visual showroom"><img src="project-2-featured.png" alt="Project 2 featured image"></div>
         <div class="project-body">
-          <div class="project-type">Commercial Fit-Out</div><h3>JPark Showroom &amp; Office</h3>
-          <p>Material takeoff, BOQ, cost analysis, supplier coordination and documentation for a commercial fit-out project.</p>
-          <a class="work-link" href="jpark-showroom.html">View My Work →</a>
+          <div class="project-type">Commercial Fit-Out</div><h3>Project 2</h3>
+          <p>A combined office and showroom fit-out where I supported the project from planning through completion, coordinating site activities and helping ensure smooth execution and progress.</p>
+          <a class="work-link" href="project-2.html">View My Work →</a>
         </div>
       </article>
       <article class="project">
-        <div class="project-visual tower"><div class="sketch"></div></div>
+        <div class="project-visual tower"><img src="project-6-featured.jpg" alt="Project 6 featured image"></div>
         <div class="project-body">
-          <div class="project-type">High-Rise Construction</div><h3>One Vertis Plaza</h3>
-          <p>Plumbing inspection, testing, WIR/WAP preparation, and QA/QC support for a 43-storey corporate tower.</p>
-          <a class="work-link" href="one-vertis-plaza.html">View My Work →</a>
+          <div class="project-type">High-Rise Construction</div><h3>Project 6</h3>
+          <p>A high-rise corporate construction project where I worked as a QA/QC Plumbing Engineer, supporting plumbing inspections and testing, WIR/WAP documentation, inspection scheduling, and QA/QC coordination.</p>
+          <a class="work-link" href="project-6.html">View My Work →</a>
         </div>
       </article>
     </div>

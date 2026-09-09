@@ -19,3 +19,13 @@ Project detail pages are intentionally simple photo galleries with short descrip
 
 
 All Projects page: every project now includes a “View My Work” link to a simple photo-gallery page with a short description.
+
+## Project gallery layout
+Each individual project page uses the same 5-photo gallery: one large photo on the left and four smaller photos in a 2×2 grid on the right. Replace each `<div class="scene"></div>` inside `.photo` with an `<img src="..." alt="...">`. Clicking a real image opens it full-screen; placeholders do nothing until an image is added.
+
+
+## Non-disclosure naming
+Project names are anonymized as Project 1 through Project 6 throughout the public-facing site and URLs.
+
+## Confidentiality
+Project names, sizes, durations, and other identifying details are anonymized in the public portfolio.
